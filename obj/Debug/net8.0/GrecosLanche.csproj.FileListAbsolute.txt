@@ -1,0 +1,9 @@
+C:\Projetos\GrecosLanche\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Projetos\GrecosLanche\obj\Debug\net8.0\GrecosLanche.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\GrecosLanche\obj\Debug\net8.0\GrecosLanche.AssemblyInfoInputs.cache
+C:\Projetos\GrecosLanche\obj\Debug\net8.0\GrecosLanche.AssemblyInfo.cs
+C:\Projetos\GrecosLanche\obj\Debug\net8.0\GrecosLanche.csproj.CoreCompileInputs.cache
+C:\Projetos\GrecosLanche\obj\Debug\net8.0\GrecosLanche.MvcApplicationPartsAssemblyInfo.cache
+C:\Projetos\GrecosLanche\obj\Debug\net8.0\GrecosLanche.RazorAssemblyInfo.cache
+C:\Projetos\GrecosLanche\obj\Debug\net8.0\GrecosLanche.RazorAssemblyInfo.cs
+C:\Projetos\GrecosLanche\obj\Debug\net8.0\GrecosLanche.sourcelink.json
