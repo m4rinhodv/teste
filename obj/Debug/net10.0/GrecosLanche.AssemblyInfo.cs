@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GrecosLanche")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28daf6fd693d47b37b7d415b988a5f1ff888f700")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+078058a5458b44404e998e4c9536290fbd1a6a97")]
 [assembly: System.Reflection.AssemblyProductAttribute("GrecosLanche")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GrecosLanche")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
