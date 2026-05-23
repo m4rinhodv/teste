@@ -154,7 +154,7 @@
 
             <div class="item">
                 <span>🍔🍔🍔 Combo 3 X-Salada</span>
-                <input type="number" id="burger" min="0" value="0">
+                <input type="number" id="combo" min="0" value="0">
             </div>
 
             <div class="item">
@@ -183,7 +183,7 @@
             let bacon = document.getElementById("bacon").value;
             let salada = document.getElementById("salada").value;
             let hotdog = document.getElementById("hotdog").value;
-            let combo = document.getElementById("combo x-salada").value;
+            let combo = document.getElementById("combo").value;
             let refri = document.getElementById("refri").value;
 
             let pedido = "";
@@ -205,7 +205,7 @@
             }
 
             if (combo > 0) {
-                pedido += `Cachorro Quente: ${combo}\n`;
+                pedido += `Combo 3 X-Salada: ${combo}\n`;
             }
 
             if (refri > 0) {
