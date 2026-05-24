@@ -22,7 +22,7 @@
 
         <h1>🍔Greco's Lanche</h1>
 
-        <p>
+        <p class="c">
             Sanduíches e Combos Promocionais😋
         </p>
 
@@ -44,153 +44,175 @@
             <h2>Monte seu pedido 🍟</h2>
 
             <div class="item">
-                <span>🍔 X-Frango </span>
-                <input type="number" id="frango" min="0" value="0">
-            </div>
-
-            <div class="item">
-                <span>🍔 X-Tudo </span>
-                <input type="number" id="tudo" min="0" value="0">
-            </div>
-
-            <div class="item">
-                <span>🥓 X-Bacon</span>
-                <input type="number" id="bacon" min="0" value="0">
-            </div>
-
-            <div class="item">
-                <span>🍔 X-Salada</span>
-                <input type="number" id="salada" min="0" value="0">
-            </div>
-
-            <div class="item">
-                <span>🌭 Hot-Dog </span>
-                <input type="number" id="hotdog" min="0" value="0">
-            </div>
-
-            <div class="item">
-                <span>🍔🍔🍔 Combo 3 X-Salada</span>
-                <input type="number" id="combo" min="0" value="0">
-            </div>
-
-            <div class="item">
-                <span>🥤 Refrigerante </span>
-                <input type="number" id="refri" min="0" value="0">
-            </div>
-
-            <ul>
-                <li>
-                    <div class="item">
-                        Pureza 1L
-                        <input type="checkbox" name="refri" value="Pureza">
+                <div class="info">
+                    <span>🍔 X-Frango </span>
+                    <p>pão,carne,ovo,frango,presunto,<br>
+                        queijo,alface,tomate</p>
                     </div>
-                </li>
-                <li>
-                    <div class="item">
-                        Coca-Cola Lata
-                        <input type="checkbox" name="refri" value="Coca-Cola Lata">
+                    <input type="number" id="frango" min="0" value="0">
+                </div>
+
+                <div class="item">
+                    <div class="info">
+                        <span>🍔 X-Tudo</span>
+                        <p>pão,carne,ovo,presunto,queijo,<br>
+                            salsicha,calabresa,bacon,alface,cebola,tomate</p>
+                        </div>
+                        <input type="number" id="tudo" min="0" value="0">
                     </div>
-                </li>
-                <li>
+
                     <div class="item">
-                        Coca-Cola Zero Lata
-                        <input type="checkbox" name="refri" value="Coca-Cola Lata Zero">
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        Fanta Laranja Lata
-                        <input type="checkbox" name="refri" value="Fanta Laranja Lata">
-                    </div>
-                </li>
+                        <div class="info">
+                            <span>🍔 X-Bacon </span>
+                            <p>pão,carne,ovo,bacon,presunto,<br>
+                                queijo,alface,cebola,tomate</p>
+                            </div>
+                            <input type="number" id="bacon" min="0" value="0">
+                        </div>
 
-            </ul>
+                        <div class="item">
+                            <div class="info">
+                                <span>🍔 X-Salada</span>
+                                <p>pão,carne,ovo,presunto,<br>
+                                    queijo,alface,cebola,pepinotomate</p>
+                                </div>
+                                <input type="number" id="salada" min="0" value="0">
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <span>🌭 Hot-Dog</span>
+                                    <p>pão,salsicha,moloho especial<br>
+                                        batata palha,queijo ralado,maionese,ketchup</p>
+                                    </div>
+                                    <input type="number" id="hotdog" min="0" value="0">
+                                </div>
+
+                                <div class="item">
+                                    <div class="info">
+                                        <span>🍔 Combo 3 X-Salada</span>
+                                    </div>
+                                    <input type="number" id="combo" min="0" value="0">
+                                </div>
+
+                                <div class="item">
+                                    <span>🥤 Refrigerante </span>
+                                    <input type="number" id="refri" min="0" value="0">
+                                </div>
+
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            🥤 Pureza 1L
+                                            <input type="checkbox" name="refri" value="Pureza">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            🥤 Coca-Cola Lata
+                                            <input type="checkbox" name="refri" value="Coca-Cola Lata">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            🥤 Coca-Cola Zero Lata
+                                            <input type="checkbox" name="refri" value="Coca-Cola Lata Zero">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            🥤 Fanta Laranja Lata
+                                            <input type="checkbox" name="refri" value="Fanta Laranja Lata">
+                                        </div>
+                                    </li>
+
+                                </ul>
 
 
-        </div>
-        <button type="button" onclick="enviarPedido()">
-            📲 Fazer Pedido
-        </button>
+                            </div>
+                            <button type="button" onclick="enviarPedido()">
+                                📲 Fazer Pedido
+                            </button>
 
-    </div>
+                        </div>
 
-    <script>
+                        <script>
 
-            function enviarPedido() {
+                                function enviarPedido() {
 
-                let nome = document.getElementById("nome").value;
-                let endereco = document.getElementById("endereco").value;
-                let obs = document.getElementById("obs").value;
+                                    let nome = document.getElementById("nome").value;
+                                    let endereco = document.getElementById("endereco").value;
+                                    let obs = document.getElementById("obs").value;
 
-                let frango = document.getElementById("frango").value;
-                let tudo = document.getElementById("tudo").value;
-                let bacon = document.getElementById("bacon").value;
-                let salada = document.getElementById("salada").value;
-                let hotdog = document.getElementById("hotdog").value;
-                let combo = document.getElementById("combo").value;
-                let refri = document.getElementById("refri").value;
-                let refrigerantes = document.querySelectorAll('input[name="refri"]:checked');
+                                    let frango = document.getElementById("frango").value;
+                                    let tudo = document.getElementById("tudo").value;
+                                    let bacon = document.getElementById("bacon").value;
+                                    let salada = document.getElementById("salada").value;
+                                    let hotdog = document.getElementById("hotdog").value;
+                                    let combo = document.getElementById("combo").value;
+                                    let refri = document.getElementById("refri").value;
+                                    let refrigerantes = document.querySelectorAll('input[name="refri"]:checked');
 
-                let listaRefri = "";
+                                    let listaRefri = "";
 
-                refrigerantes.forEach((item) => {
-                    listaRefri += `- ${item.value}\n`;
-                });
+                                    refrigerantes.forEach((item) => {
+                                        listaRefri += `- ${item.value}\n`;
+                                    });
 
-                let pedido = "";
-
-
-                if (frango > 0) {
-                    pedido += `X-Frango: ${frango}\n`;
-                }
-
-                if (tudo > 0) {
-                    pedido += `X-Tudo: ${tudo}\n`;
-                }
+                                    let pedido = "";
 
 
-                if (bacon > 0) {
-                    pedido += `X-Bacon: ${bacon}\n`;
-                }
+                                    if (frango > 0) {
+                                        pedido += `X-Frango: ${frango}\n`;
+                                    }
 
-                if (salada > 0) {
-                    pedido += `X-Salada: ${salada}\n`;
-                }
+                                    if (tudo > 0) {
+                                        pedido += `X-Tudo: ${tudo}\n`;
+                                    }
 
-                if (hotdog > 0) {
-                    pedido += `Cachorro Quente: ${hotdog}\n`;
-                }
 
-                if (combo > 0) {
-                    pedido += `Combo 3 X-Salada: ${combo}\n`;
-                }
+                                    if (bacon > 0) {
+                                        pedido += `X-Bacon: ${bacon}\n`;
+                                    }
 
-                if (refri > 0) {
-                    pedido += `Refrigerante: ${refri}\n`;
-                }
+                                    if (salada > 0) {
+                                        pedido += `X-Salada: ${salada}\n`;
+                                    }
 
-                let mensagem = `NOVO PEDIDO
-                Cliente: 
-                ${nome}
-                Endereço: 
-                ${endereco}
-                Pedido: 
-                ${pedido}
-                Refrigerantes: 
-                ${listaRefri}
-                Observação: 
-                ${obs}`;
+                                    if (hotdog > 0) {
+                                        pedido += `Cachorro Quente: ${hotdog}\n`;
+                                    }
 
-                let telefone = "5548988101553";
+                                    if (combo > 0) {
+                                        pedido += `Combo 3 X-Salada: ${combo}\n`;
+                                    }
 
-                let url =
-                    `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+                                    if (refri > 0) {
+                                        pedido += `Refrigerante: ${refri}\n`;
+                                    }
 
-                window.location.href = url;
-            }
+                                    let mensagem = `NOVO PEDIDO
+                                                                                                                                                                                                                                                                                                        Cliente: 
+                                                                                                                                                                                                                                                                                                        ${nome}
+                                                                                                                                                                                                                                                                                                        Endereço: 
+                                                                                                                                                                                                                                                                                                        ${endereco}
+                                                                                                                                                                                                                                                                                                        Pedido: 
+                                                                                                                                                                                                                                                                                                        ${pedido}
+                                                                                                                                                                                                                                                                                                        Refrigerantes: 
+                                                                                                                                                                                                                                                                                                        ${listaRefri}
+                                                                                                                                                                                                                                                                                                        Observação: 
+                                                                                                                                                                                                                                                                                                        ${obs}`;
 
-    </script>
+                                    let telefone = "5548988101553";
 
-</body>
+                                    let url =
+                                        `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
 
-</html>
+                                    window.location.href = url;
+                                }
+
+                        </script>
+
+                    </body>
+
+                </html>
