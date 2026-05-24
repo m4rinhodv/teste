@@ -12,100 +12,7 @@
     <title>Delícias da Fome 🍔</title>
 
     <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: Arial;
-            }
 
-            body {
-                background: linear-gradient(180deg, #ff914d, #ffde59);
-                min-height: 100vh;
-                padding: 20px;
-            }
-
-            .container {
-                max-width: 600px;
-                margin: auto;
-                background: white;
-                padding: 25px;
-                border-radius: 25px;
-                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            }
-
-            h1 {
-                text-align: center;
-                color: #ff5e00;
-                margin-bottom: 10px;
-                font-size: 40px;
-            }
-
-            .sub {
-                text-align: center;
-                margin-bottom: 25px;
-                color: #555;
-            }
-
-            .card {
-                background: #fff4ec;
-                border-radius: 20px;
-                padding: 15px;
-                margin-top: 15px;
-            }
-
-            .card h2 {
-                color: #ff5e00;
-                margin-bottom: 10px;
-            }
-
-            label {
-                display: block;
-                margin-top: 10px;
-                margin-bottom: 5px;
-                font-weight: bold;
-            }
-
-            input,
-            textarea {
-                width: 100%;
-                padding: 12px;
-                border: none;
-                border-radius: 12px;
-                background: #f2f2f2;
-            }
-
-            .item {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background: white;
-                padding: 10px;
-                border-radius: 12px;
-                margin-top: 10px;
-            }
-
-            .item input {
-                width: 70px;
-                text-align: center;
-            }
-
-            button {
-                width: 100%;
-                padding: 15px;
-                border: none;
-                border-radius: 15px;
-                background: #25d366;
-                color: white;
-                font-size: 20px;
-                margin-top: 25px;
-                cursor: pointer;
-                transition: 0.3s;
-            }
-
-            button:hover {
-                transform: scale(1.03);
-            }
     </style>
 </head>
 
@@ -113,10 +20,10 @@
 
     <div class="container">
 
-        <h1>🍔 Greco's Lanche</h1>
+        <h1>🍔Greco's Lanche</h1>
 
-        <p class="sub">
-            Os melhores lanches da cidade 😋
+        <p>
+            Sanduíches e Combos Promocionais😋
         </p>
 
         <div class="card">
@@ -138,7 +45,12 @@
 
             <div class="item">
                 <span>🍔 X-Frango </span>
-                <input type="number" id="burger" min="0" value="0">
+                <input type="number" id="frango" min="0" value="0">
+            </div>
+
+            <div class="item">
+                <span>🍔 X-Tudo </span>
+                <input type="number" id="tudo" min="0" value="0">
             </div>
 
             <div class="item">
@@ -147,12 +59,12 @@
             </div>
 
             <div class="item">
-                <span>🥗 X-Salada</span>
+                <span>🍔 X-Salada</span>
                 <input type="number" id="salada" min="0" value="0">
             </div>
 
             <div class="item">
-                <span>🌭 Cachorro Quente</span>
+                <span>🌭 Hot-Dog </span>
                 <input type="number" id="hotdog" min="0" value="0">
             </div>
 
@@ -162,9 +74,37 @@
             </div>
 
             <div class="item">
-                <span>🥤 Refrigerante</span>
+                <span>🥤 Refrigerante </span>
                 <input type="number" id="refri" min="0" value="0">
             </div>
+
+            <ul>
+                <li>
+                    <div class="item">
+                        Pureza 1L
+                        <input type="checkbox" name="refri" value="Pureza">
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        Coca-Cola Lata
+                        <input type="checkbox" name="refri" value="Coca-Cola Lata">
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        Coca-Cola Zero Lata
+                        <input type="checkbox" name="refri" value="Coca-Cola Lata Zero">
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        Fanta Laranja Lata
+                        <input type="checkbox" name="refri" value="Fanta Laranja Lata">
+                    </div>
+                </li>
+
+            </ul>
 
 
         </div>
@@ -182,18 +122,32 @@
                 let endereco = document.getElementById("endereco").value;
                 let obs = document.getElementById("obs").value;
 
-                let burger = document.getElementById("burger").value;
+                let frango = document.getElementById("frango").value;
+                let tudo = document.getElementById("tudo").value;
                 let bacon = document.getElementById("bacon").value;
                 let salada = document.getElementById("salada").value;
                 let hotdog = document.getElementById("hotdog").value;
                 let combo = document.getElementById("combo").value;
                 let refri = document.getElementById("refri").value;
+                let refrigerantes = document.querySelectorAll('input[name="refri"]:checked');
+
+                let listaRefri = "";
+
+                refrigerantes.forEach((item) => {
+                    listaRefri += `- ${item.value}\n`;
+                });
 
                 let pedido = "";
 
-                if (burger > 0) {
-                    pedido += `X-Burger: ${burger}\n`;
+
+                if (frango > 0) {
+                    pedido += `X-Frango: ${frango}\n`;
                 }
+
+                if (tudo > 0) {
+                    pedido += `X-Tudo: ${tudo}\n`;
+                }
+
 
                 if (bacon > 0) {
                     pedido += `X-Bacon: ${bacon}\n`;
@@ -216,10 +170,16 @@
                 }
 
                 let mensagem = `NOVO PEDIDO
-                Cliente: ${nome}
-                Endereço: ${endereco}
-                Pedido: ${pedido}
-                Observação: ${obs}`;
+                Cliente: 
+                ${nome}
+                Endereço: 
+                ${endereco}
+                Pedido: 
+                ${pedido}
+                Refrigerantes: 
+                ${listaRefri}
+                Observação: 
+                ${obs}`;
 
                 let telefone = "5548988101553";
 
