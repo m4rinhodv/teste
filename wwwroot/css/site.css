@@ -151,13 +151,13 @@ button:hover {
 }
 
 .info span {
-  font-size: 22px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .info p {
   color: rgb(99, 96, 96);
-  font-size: 12px;
+  font-size: 10px;
 }
 
 ul {
