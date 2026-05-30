@@ -65,7 +65,7 @@
                 <img src="/img/xtudo.jpeg">
                 <div class="card-content">
                     <h3>X-Tudo Supremo</h3>
-                    <p>Duplo hambúrguer, queijo, bacon e molho especial.</p>
+                    <p>Hambúrguer artesanal, queijo, bacon e molho especial.</p>
                     <div class="price">R$ 29,99</div>
                     <br>
                     <button class="btn" onclick="adicionarCarrinho('X-Tudo Supremo',29.99)">
@@ -160,13 +160,13 @@
                 carrinho.forEach((item, index) => {
 
                     lista.innerHTML += `
-                            <p>
-                                ${item.nome} - R$ ${item.preco.toFixed(2)}
-                                <button onclick="removerItem(${index})">
-                                    ❌
-                                </button>
-                            </p>
-                        `;
+                                <p>
+                                    ${item.nome} - R$ ${item.preco.toFixed(2)}
+                                    <button onclick="removerItem(${index})">
+                                        ❌
+                                    </button>
+                                </p>
+                            `;
 
                     total += item.preco;
                 });
