@@ -31,7 +31,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>🍔 Sabor que <span>conquista</span> na primeira mordida</h1>
+            <h1>🍔 Sabor que conquista</h1>
 
             <p>
                 Ingredientes selecionados, carne artesanal
@@ -50,22 +50,22 @@
         <div class="cards">
 
             <div class="card">
-                <img src="/img/xbacon.jpeg">
+                <img src="/img/xbacon2.jpeg">
                 <div class="card-content">
                     <h3>X-Bacon Especial</h3>
                     <p>Pão brioche, hambúrguer artesanal e bacon crocante.</p>
                     <div class="price">R$ 24,99</div>
-                    <button class="btn" onclick="adicionarCarrinho('X-Bacon Especial',29.99)">
+                    <button class="btn" onclick="adicionarCarrinho('X-Bacon Especial',24.99)">
                         Adicionar ao Carrinho
                     </button>
                 </div>
             </div>
 
             <div class="card">
-                <img src="/img/xtudo.jpeg">
+                <img src="/img/xtudo2.jpeg">
                 <div class="card-content">
                     <h3>X-Tudo Supremo</h3>
-                    <p>Hambúrguer artesanal, queijo, bacon e molho especial.</p>
+                    <p>Pão, carne, ovo, presunto, queijo, salsicha, calabresa, bacon, alface, cebola, tomate</p>
                     <div class="price">R$ 29,99</div>
                     <br>
                     <button class="btn" onclick="adicionarCarrinho('X-Tudo Supremo',29.99)">
@@ -73,10 +73,86 @@
                     </button>
                 </div>
             </div>
+            <div class="card">
+                <img src="/img/xcalabresa.jpeg">
+                <div class="card-content">
+                    <h3>X-Calabresa</h3>
+                    <p>Pão, carne, ovo, calabresa, presunto, queijo, alface, cebola, tomate.</p>
+                    <div class="price">R$ 25,99</div>
+                    <br>
+                    <button class="btn" onclick="adicionarCarrinho('X-Calabresa',25.99)">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/xsalada.jpeg">
+                <div class="card-content">
+                    <h3>X-Salada</h3>
+                    <p>Pão,carne,ovo,presunto,queijo,alface,cebola,pepino,tomate.</p>
+                    <div class="price">R$ 16,99</div>
+                    <br>
+                    <button class="btn" onclick="adicionarCarrinho('X-Salada',16.99)">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/xfrango.jpeg">
+                <div class="card-content">
+                    <h3>X-Frango</h3>
+                    <p>Pão, carne, ovo, frango, presunto, queijo, alface, tomate.</p>
+                    <div class="price">R$ 19,99</div>
+                    <br>
+                    <button class="btn" onclick="adicionarCarrinho('X-Frango',19.99)">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bebidas">
+        <h2 class="section-title">🥤 Bebidas</h2>
+
+        <div class="cards">
 
             <div class="card">
+                <div class="card-content">
+                    <h3>Coca-Cola 350ml</h3>
+                    <p>Refrigerante gelado</p>
+                    <div class="price">R$ 7,00</div>
 
+                    <button class="btn" onclick="adicionarCarrinho('Coca-Cola 350ml', 7.00)">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
             </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Pureza 1L</h3>
+                    <p>Refrigerante gelado</p>
+                    <div class="price">R$ 10,00</div>
+
+                    <button class="btn" onclick="adicionarCarrinho('Pureza 1L', 10.00)">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Água Mineral</h3>
+                    <p>Sem gás/Com gás</p>
+                    <div class="price">R$ 4,00</div>
+
+                    <button class="btn" onclick="adicionarCarrinho('Água Mineral com gás', 4.00)">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+
+            
 
         </div>
     </section>
@@ -91,10 +167,9 @@
 
             <br>
 
-            <input type="text" id="nome" placeholder="Seu nome" style="padding:10px;width:100%;margin-bottom:10px;">
+            <input type="text" id="nome" placeholder="Seu nome">
 
-            <input type="text" id="endereco" placeholder="Seu endereço"
-                   style="padding:10px;width:100%;margin-bottom:10px;">
+            <input type="text" id="endereco" placeholder="Seu endereço">
 
             <button class="btn" onclick="finalizarPedido()" style="padding:12px 20px;cursor:pointer;">
                 Finalizar Pedido
@@ -160,13 +235,13 @@
                 carrinho.forEach((item, index) => {
 
                     lista.innerHTML += `
-                                <p>
-                                    ${item.nome} - R$ ${item.preco.toFixed(2)}
-                                    <button onclick="removerItem(${index})">
-                                        ❌
-                                    </button>
-                                </p>
-                            `;
+                                                                                                <p>
+                                                                                                    ${item.nome} - R$ ${item.preco.toFixed(2)}
+                                                                                                    <button onclick="removerItem(${index})">
+                                                                                                        ❌
+                                                                                                    </button>
+                                                                                                </p>
+                                                                                            `;
 
                     total += item.preco;
                 });

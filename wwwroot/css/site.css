@@ -86,6 +86,22 @@ nav {
   margin-bottom: 30px;
 }
 
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #1d1d1d;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #ff9800;
+}
+
 .btn {
   display: inline-block;
   background: #ffb703;
