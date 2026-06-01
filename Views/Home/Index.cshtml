@@ -47,8 +47,38 @@
     <section id="cardapio" class="section">
         <h2 class="section-title">Nosso Cardápio</h2>
 
-        <div class="cards">
+        <sectionid id="cardapio" class="section">
+            <h2 class="section-title">🔥 Promoções</h2>
 
+            
+            <div class="card">
+                <img src="/img/promoxsalada.jpeg">
+                <div class="card-content">
+                    <h3>3 X-Salada</h3>
+                    <p>🤤 Quem prova, repete. Quem vê a promoção, pede na hora!</p>
+                    <div class="price">R$ 39,99</div>
+                    <br>
+                    <button class="btn" onclick="adicionarCarrinho('3 X-Salada',39.99)">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <img src="/img/promodog.jpeg">
+                <div class="card-content">
+                    <h3>3 Dogão</h3>
+                    <p>😋 Seu lanche favorito por um preço irresistível!</p>
+                    <div class="price">R$ 34,99</div>
+                    <br>
+                    <button class="btn" onclick="adicionarCarrinho('3 Dogão',34.99)">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="cards">
             <div class="card">
                 <img src="/img/xbacon2.jpeg">
                 <div class="card-content">
@@ -111,6 +141,7 @@
             </div>
         </div>
     </section>
+    <br>
     <section class="bebidas">
         <h2 class="section-title">🥤 Bebidas</h2>
 
@@ -151,11 +182,10 @@
                     </button>
                 </div>
             </div>
-
-            
-
         </div>
     </section>
+
+    
 
     <section class="section">
         <h2 class="section-title">Seu Pedido</h2>
@@ -235,13 +265,13 @@
                 carrinho.forEach((item, index) => {
 
                     lista.innerHTML += `
-                                                                                                    <p>
-                                                                                                        ${item.nome} - R$ ${item.preco.toFixed(2)}
-                                                                                                        <button onclick="removerItem(${index})">
-                                                                                                            ❌
-                                                                                                        </button>
-                                                                                                    </p>
-                                                                                                `;
+                                                                                                                                        <p>
+                                                                                                                                            ${item.nome} - R$ ${item.preco.toFixed(2)}
+                                                                                                                                            <button onclick="removerItem(${index})">
+                                                                                                                                                ❌
+                                                                                                                                            </button>
+                                                                                                                                        </p>
+                                                                                                                                    `;
 
                     total += item.preco;
                 });
