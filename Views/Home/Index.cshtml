@@ -30,6 +30,7 @@
     </header>
 
     <section class="hero">
+        <img src="/img/xtudo2.jpeg" class="hero-img">
         <div class="hero-content">
             <h1>🍔 Sabor que <span>conquista</span></h1>
 
@@ -45,12 +46,11 @@
     </section>
 
     <section id="cardapio" class="section">
+
         <h2 class="section-title">Nosso Cardápio</h2>
 
-        <sectionid id="cardapio" class="section">
+        <section id="cardapio" class="section">
             <h2 class="section-title">🔥 Promoções</h2>
-
-            
             <div class="card">
                 <img src="/img/promoxsalada.jpeg">
                 <div class="card-content">
@@ -67,7 +67,7 @@
             <div class="card">
                 <img src="/img/promodog.jpeg">
                 <div class="card-content">
-                    <h3>3 Dogão</h3>
+                    <h3>3 Dogão + 1 Refrigerante de 1,5L</h3>
                     <p>😋 Seu lanche favorito por um preço irresistível!</p>
                     <div class="price">R$ 34,99</div>
                     <br>
@@ -76,242 +76,238 @@
                     </button>
                 </div>
             </div>
+            <br>
+            <div class="cards">
+                <div class="card">
+                    <img src="/img/xbacon2.jpeg">
+                    <div class="card-content">
+                        <h3>X-Bacon Especial</h3>
+                        <p>Pão brioche, hambúrguer artesanal e bacon crocante.</p>
+                        <div class="price">R$ 24,99</div>
+                        <button class="btn" onclick="adicionarCarrinho('X-Bacon Especial',24.99)">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/xtudo2.jpeg">
+                    <div class="card-content">
+                        <h3>X-Tudo Supremo</h3>
+                        <p>Pão, carne, ovo, presunto, queijo, salsicha, calabresa, bacon, alface, cebola, tomate</p>
+                        <div class="price">R$ 29,99</div>
+                        <br>
+                        <button class="btn" onclick="adicionarCarrinho('X-Tudo Supremo',29.99)">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/xcalabresa.jpeg">
+                    <div class="card-content">
+                        <h3>X-Calabresa</h3>
+                        <p>Pão, carne, ovo, calabresa, presunto, queijo, alface, cebola, tomate.</p>
+                        <div class="price">R$ 25,99</div>
+                        <br>
+                        <button class="btn" onclick="adicionarCarrinho('X-Calabresa',25.99)">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/xsalada.jpeg">
+                    <div class="card-content">
+                        <h3>X-Salada</h3>
+                        <p>Pão,carne,ovo,presunto,queijo,alface,cebola,pepino,tomate.</p>
+                        <div class="price">R$ 16,99</div>
+                        <br>
+                        <button class="btn" onclick="adicionarCarrinho('X-Salada',16.99)">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/xfrango.jpeg">
+                    <div class="card-content">
+                        <h3>X-Frango</h3>
+                        <p>Pão, carne, ovo, frango, presunto, queijo, alface, tomate.</p>
+                        <div class="price">R$ 19,99</div>
+                        <br>
+                        <button class="btn" onclick="adicionarCarrinho('X-Frango',19.99)">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <div class="cards">
-            <div class="card">
-                <img src="/img/xbacon2.jpeg">
-                <div class="card-content">
-                    <h3>X-Bacon Especial</h3>
-                    <p>Pão brioche, hambúrguer artesanal e bacon crocante.</p>
-                    <div class="price">R$ 24,99</div>
-                    <button class="btn" onclick="adicionarCarrinho('X-Bacon Especial',24.99)">
-                        Adicionar ao Carrinho
-                    </button>
+
+        <br>
+
+    
+        <section class="bebidas">
+            <h2 class="section-title">🥤 Bebidas</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Coca-Cola 350ml</h3>
+                        <p>Refrigerante gelado</p>
+                        <div class="price">R$ 7,00</div>
+
+                        <button class="btn" onclick="adicionarCarrinho('Coca-Cola 350ml', 7.00)">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Pureza 1L</h3>
+                        <p>Refrigerante gelado</p>
+                        <div class="price">R$ 10,00</div>
+
+                        <button class="btn" onclick="adicionarCarrinho('Pureza 1L', 10.00)">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Água Mineral</h3>
+                        <p>Sem gás/Com gás</p>
+                        <div class="price">R$ 4,00</div>
+
+                        <button class="btn" onclick="adicionarCarrinho('Água Mineral com gás', 4.00)">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
                 </div>
             </div>
-
-            <div class="card">
-                <img src="/img/xtudo2.jpeg">
-                <div class="card-content">
-                    <h3>X-Tudo Supremo</h3>
-                    <p>Pão, carne, ovo, presunto, queijo, salsicha, calabresa, bacon, alface, cebola, tomate</p>
-                    <div class="price">R$ 29,99</div>
-                    <br>
-                    <button class="btn" onclick="adicionarCarrinho('X-Tudo Supremo',29.99)">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/img/xcalabresa.jpeg">
-                <div class="card-content">
-                    <h3>X-Calabresa</h3>
-                    <p>Pão, carne, ovo, calabresa, presunto, queijo, alface, cebola, tomate.</p>
-                    <div class="price">R$ 25,99</div>
-                    <br>
-                    <button class="btn" onclick="adicionarCarrinho('X-Calabresa',25.99)">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/img/xsalada.jpeg">
-                <div class="card-content">
-                    <h3>X-Salada</h3>
-                    <p>Pão,carne,ovo,presunto,queijo,alface,cebola,pepino,tomate.</p>
-                    <div class="price">R$ 16,99</div>
-                    <br>
-                    <button class="btn" onclick="adicionarCarrinho('X-Salada',16.99)">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/img/xfrango.jpeg">
-                <div class="card-content">
-                    <h3>X-Frango</h3>
-                    <p>Pão, carne, ovo, frango, presunto, queijo, alface, tomate.</p>
-                    <div class="price">R$ 19,99</div>
-                    <br>
-                    <button class="btn" onclick="adicionarCarrinho('X-Frango',19.99)">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <br>
-    <section class="bebidas">
-        <h2 class="section-title">🥤 Bebidas</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <div class="card-content">
-                    <h3>Coca-Cola 350ml</h3>
-                    <p>Refrigerante gelado</p>
-                    <div class="price">R$ 7,00</div>
-
-                    <button class="btn" onclick="adicionarCarrinho('Coca-Cola 350ml', 7.00)">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-content">
-                    <h3>Pureza 1L</h3>
-                    <p>Refrigerante gelado</p>
-                    <div class="price">R$ 10,00</div>
-
-                    <button class="btn" onclick="adicionarCarrinho('Pureza 1L', 10.00)">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-content">
-                    <h3>Água Mineral</h3>
-                    <p>Sem gás/Com gás</p>
-                    <div class="price">R$ 4,00</div>
-
-                    <button class="btn" onclick="adicionarCarrinho('Água Mineral com gás', 4.00)">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
     
 
-    <section class="section">
-        <h2 class="section-title">Seu Pedido</h2>
+        <section class="section">
+            <h2 class="section-title">Seu Pedido</h2>
 
-        <div class="about">
-            <div id="listaCarrinho"></div>
+            <div class="about">
+                <div id="listaCarrinho"></div>
 
-            <h3 id="totalPedido">Total: R$ 0,00</h3>
+                <h3 id="totalPedido">Total: R$ 0,00</h3>
 
-            <br>
+                <br>
 
-            <input type="text" id="nome" placeholder="Seu nome">
+                <input type="text" id="nome" placeholder="Seu nome">
 
-            <input type="text" id="endereco" placeholder="Seu endereço">
+                <input type="text" id="endereco" placeholder="Seu endereço">
 
-            <button class="btn" onclick="finalizarPedido()" style="padding:12px 20px;cursor:pointer;">
-                Finalizar Pedido
-            </button>
-        </div>
-    </section>
+                <button class="btn" onclick="finalizarPedido()" style="padding:12px 20px;cursor:pointer;">
+                    Finalizar Pedido
+                </button>
+            </div>
+        </section>
 
-    <section id="sobre" class="section">
-        <h2 class="section-title">Peça agora e experimente o melhor lanche da cidade! 🚀🍔🥤</h2>
+        <section id="sobre" class="section">
+            <h2 class="section-title">Peça agora e experimente o melhor lanche da cidade! 🚀🍔🥤</h2>
 
-        <div class="about">
+            <div class="about">
 
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section id="contato" class="section">
-        <h2 class="section-title">Contato</h2>
+        <section id="contato" class="section">
+            <h2 class="section-title">Contato</h2>
 
-        <div class="about">
-            📍 Apenas Loja Online<br><br>
-            📞 (48)9881-01553 <br><br>
-            🕒 De Sexta a Domingo, 19h ás 00h
-        </div>
-    </section>
+            <div class="about">
+                📍 Apenas Delivery<br><br>
+                📞 (48)9881-01553 <br><br>
+                🕒 De Sexta a Domingo, 18h ás 1h
+            </div>
+        </section>
 
-    <footer>
-        © 2026 Grecos Lanches
-    </footer>
+        <footer>
+            © 2026 Grecos Lanches
+        </footer>
 
-    <a class="whatsapp" href="https://wa.me/5548988101553?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!"
-       target="_blank">
-        📱
-    </a>
+        <a class="whatsapp" href="https://wa.me/5548988101553?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!"
+           target="_blank">
+            📱
+        </a>
 
-    <script>
-            let carrinho = [];
+        <script>
+                    let carrinho = [];
 
 
-            function removerItem(index) {
-                carrinho.splice(index, 1);
-                atualizarCarrinho();
-            }
+                    function removerItem(index) {
+                        carrinho.splice(index, 1);
+                        atualizarCarrinho();
+                    }
 
-            function adicionarCarrinho(nome, preco) {
+                    function adicionarCarrinho(nome, preco) {
 
-                carrinho.push({
-                    nome: nome,
-                    preco: preco
-                });
+                        carrinho.push({
+                            nome: nome,
+                            preco: preco
+                        });
 
-                atualizarCarrinho();
-            }
+                        atualizarCarrinho();
+                    }
 
-            function atualizarCarrinho() {
+                    function atualizarCarrinho() {
 
-                let lista = document.getElementById("listaCarrinho");
-                let totalElemento = document.getElementById("totalPedido");
+                        let lista = document.getElementById("listaCarrinho");
+                        let totalElemento = document.getElementById("totalPedido");
 
-                lista.innerHTML = "";
+                        lista.innerHTML = "";
 
-                let total = 0;
+                        let total = 0;
 
-                carrinho.forEach((item, index) => {
+                        carrinho.forEach((item, index) => {
 
-                    lista.innerHTML += `
-                                                                                                                                        <p>
-                                                                                                                                            ${item.nome} - R$ ${item.preco.toFixed(2)}
-                                                                                                                                            <button onclick="removerItem(${index})">
-                                                                                                                                                ❌
-                                                                                                                                            </button>
-                                                                                                                                        </p>
-                                                                                                                                    `;
+                            lista.innerHTML += `<p>${item.nome} - R$ ${item.preco.toFixed(2)}
+                                <button onclick="removerItem(${index})">❌</button></p>`;
 
-                    total += item.preco;
-                });
+                            total += item.preco;
+                        });
 
-                totalElemento.innerHTML =
-                    `Total: R$ ${total.toFixed(2)}`;
-            }
+                        totalElemento.innerHTML =
+                            `Total: R$ ${total.toFixed(2)}`;
+                    }
 
-            function finalizarPedido() {
+                    function finalizarPedido() {
 
-                if (carrinho.length === 0) {
-                    alert("Adicione itens ao carrinho.");
-                    return;
-                }
+                        if (carrinho.length === 0) {
+                            alert("Adicione itens ao carrinho.");
+                            return;
+                        }
 
-                let nome = document.getElementById("nome").value;
-                let endereco = document.getElementById("endereco").value;
+                        let nome = document.getElementById("nome").value;
+                        let endereco = document.getElementById("endereco").value;
 
-                let total = 0;
-                let itens = "";
+                        let total = 0;
+                        let itens = "";
 
-                carrinho.forEach(item => {
-                    itens += `• ${item.nome} - R$ ${item.preco.toFixed(2)}%0A`;
-                    total += item.preco;
-                });
+                        carrinho.forEach(item => {
+                            itens += `• ${item.nome} - R$ ${item.preco.toFixed(2)}%0A`;
+                            total += item.preco;
+                        });
 
-                let mensagem =
-                    `🍔 NOVO PEDIDO%0A%0A` +
-                    `👤 Nome: ${nome}%0A` +
-                    `📍 Endereço: ${endereco}%0A%0A` +
-                    `🛒 Itens:%0A${itens}%0A` +
-                    `💰 Total: R$ ${total.toFixed(2)}`;
+                        let mensagem =
+                            `🍔 NOVO PEDIDO%0A%0A` +
+                            `👤 Nome: ${nome}%0A` +
+                            `📍 Endereço: ${endereco}%0A%0A` +
+                            `🛒 Itens:%0A${itens}%0A` +
+                            `💰 Total: R$ ${total.toFixed(2)}`;
 
-                window.open(
-                    `https://wa.me/5548988101553?text=${mensagem}`,
-                    "_blank"
-                );
-            }
-    </script>
+                        window.open(
+                            `https://wa.me/5548988101553?text=${mensagem}`,
+                            "_blank"
+                        );
+                    }
+        </script>
 
-</body>
+    </body>
 
 </html>
